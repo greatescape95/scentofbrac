@@ -1,0 +1,66 @@
+<section id="contact" class="contact contact-with-map">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="section-heading">contact</h3>
+			</div>
+			<div class="col-md-3">
+				<div class="contact-data">
+					<ul class="white-color">
+						<li>
+							<span class="ti-pin icon"></span>Žrtava fašizma 11, Nerežišća</li>
+						<li>
+							<span class="ti-mobile icon"></span>+ 385 98 733 444</li>
+						<li>
+							<span class="ti-email icon"></span><a href="mailto:scentofbrac@gmail.com">scentofbrac@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-push-1">
+				<!-- CONTACT FORM -->
+				<div class="contact-form" *ngIf="!isSubmitMessageVisible">
+					<form #contact="ngForm" (ngSubmit)="sendMail(contact)" novalidate>
+						<div class="form-group">
+							<input type="text" class="form-control" [(ngModel)]="contactForm.name" #name="ngModel" id="name" name="name" placeholder="*Name"
+							 required>
+							<app-show-errors [control]="name"></app-show-errors>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" [(ngModel)]="contactForm.email" #email="ngModel" id="contact-email" name="contact-email"
+							 placeholder="*Email" required>
+							<app-show-errors [control]="email"></app-show-errors>
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" [(ngModel)]="contactForm.phone" #phone="ngModel" id="mobile" name="mobile" placeholder="Phone Number"
+							 required>
+							<app-show-errors [control]="phone"></app-show-errors>
+						</div>
+
+						<div class="form-group">
+							<textarea class="form-control" id="message" name="message" [(ngModel)]="contactForm.message" #message="ngModel" placeholder="Message" maxlength="140"
+							 rows="7"></textarea>
+							 <app-show-errors [control]="message"></app-show-errors>
+						</div>
+
+						<div class="form-group" [hidden]="true">
+							<textarea class="form-control" id="subject" name="subject" [(ngModel)]="contactForm.spamFilter" placeholder="Message" maxlength="140" rows="7"></textarea>
+						</div>
+
+						<button type="button" type="submit" id="submit" name="submit" class="btn btn-primary btn-lg text-center float-right" [disabled]="contact.invalid">Submit your message</button>
+					</form>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" id="contact-form" *ngIf="isSubmitMessageVisible">
+						<p>Vaša poruka je uspješno poslana.</p>
+					</div>
+				<!-- / CONTACT FORM -->
+			</div>
+		</div>
+	</div>
+	<!-- GOOGLE MAP CONTAINER -->
+	<div class="google-maps">
+		<div id="map-canvas"></div>
+	</div>
+	<!-- / GOOGLE MAP CONTAINER -->
+</section>

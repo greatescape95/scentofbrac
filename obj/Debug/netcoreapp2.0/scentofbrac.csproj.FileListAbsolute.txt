@@ -1,0 +1,10 @@
+/home/ct/dev/scentofbrac/bin/Debug/netcoreapp2.0/scentofbrac.deps.json
+/home/ct/dev/scentofbrac/bin/Debug/netcoreapp2.0/scentofbrac.runtimeconfig.json
+/home/ct/dev/scentofbrac/bin/Debug/netcoreapp2.0/scentofbrac.runtimeconfig.dev.json
+/home/ct/dev/scentofbrac/bin/Debug/netcoreapp2.0/scentofbrac.dll
+/home/ct/dev/scentofbrac/bin/Debug/netcoreapp2.0/scentofbrac.pdb
+/home/ct/dev/scentofbrac/obj/Debug/netcoreapp2.0/scentofbrac.csproj.CoreCompileInputs.cache
+/home/ct/dev/scentofbrac/obj/Debug/netcoreapp2.0/scentofbrac.AssemblyInfoInputs.cache
+/home/ct/dev/scentofbrac/obj/Debug/netcoreapp2.0/scentofbrac.AssemblyInfo.cs
+/home/ct/dev/scentofbrac/obj/Debug/netcoreapp2.0/scentofbrac.dll
+/home/ct/dev/scentofbrac/obj/Debug/netcoreapp2.0/scentofbrac.pdb
