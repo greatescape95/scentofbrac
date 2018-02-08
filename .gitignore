@@ -43,3 +43,5 @@ testem.log
 Thumbs.db
 
 /test_files
+
+/wwwroot
