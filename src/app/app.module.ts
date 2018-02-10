@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { SwiperModule } from 'angular2-useful-swiper';
+import * as $ from 'jquery';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';

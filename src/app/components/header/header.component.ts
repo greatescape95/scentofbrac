@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    this.handleNavHideOnSmallScreens();
+  }
+
+  private handleNavHideOnSmallScreens = () => {
+    jQuery('ul li').click(function () {
+      console.log($(window).width());
+      console.log($(document).width());
+      if ($(window).width() < 480) {
+        jQuery('.navbar-collapse').removeClass('in');
+      }
+
+    });
   }
 
 }

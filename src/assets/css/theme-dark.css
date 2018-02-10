@@ -3798,7 +3798,7 @@ body {
   background: #333; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   overflow-x: hidden; }
 
@@ -3963,12 +3963,11 @@ body.modal-open {
   position: relative; }
   @media (max-width: 479px) {
     .home {
-      padding-top-top: 90px; }
-      .home-slider-title-main {
-        margin-top: -100px !important; } }
+      padding-top-top: 90px; } }
   .home h2 {
-    margin: 30px auto;
+    margin: 120px auto 50px;
     position: relative; }
+
   .home-slider-title-small {
     font-size: 14px;
     color: #262626;
@@ -3990,13 +3989,27 @@ body.modal-open {
       left: 50%;
       transform: translateX(-50%); }
   .home-slider-title-main {
-    color: WHITE;
-    max-width: 700px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 550px;
     margin: 0 auto 30px;
     position: relative;
-    padding: 45px 45px;
-  font-size: 32px;
-font-family: Arial, Helvetica, sans-serif}
+    padding: 20px 20px;
+    font-size: 65px;
+font-family: 'Roboto', sans-serif; }
+
+  .home-slider-title-main div {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  @media (max-width: 479px) {
+    .home-slider-title-main {
+      font-size: 34.5px; } 
+      .home-slider-title-main div {
+        font-size: 16px;
+      }}
+
     .home-slider-title-main.inverted {
       color: #fff; }
   .home-slider .swiper-slide {
@@ -4010,10 +4023,13 @@ font-family: Arial, Helvetica, sans-serif}
       min-height: 100vh; }
     .home.image-slider .swiper-slide {
       min-height: 100vh;
-      padding: 40vh 15px 0;
+      padding: 33vh 15px 0;
       box-sizing: border-box;
       background-size: cover !important;
       background-position: center !important; }
+      @media (max-width: 479px) {
+        .home.image-slider .swiper-slide {
+          padding-top: 120px; } }
     .home.image-slider .home-pagination {
       position: absolute;
       bottom: 30px;
@@ -4021,8 +4037,13 @@ font-family: Arial, Helvetica, sans-serif}
     .home.image-slider img {
       max-width: 80%; }
   .home-buttons {
-    margin: 90px auto 0;
+    margin: 200px auto 60px;
     position: relative; }
+    @media (max-width: 479px){
+      .home-buttons {
+        margin: 200px 50px 60px;
+        position: relative; }
+    }
     .home-buttons a {
       padding: 15px 30px; }
   .home .left-arrow, .home .right-arrow, .home .left-arrow-negative, .home .right-arrow-negative {
@@ -4069,15 +4090,15 @@ font-family: Arial, Helvetica, sans-serif}
   .navbar a {
     padding: 5px;
     color: #262626;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400; }
   .navbar-brand {
     color: #262626;
-    font-family: "Lato", sans-serif; }
+    font-family: "Roboto", sans-serif; }
     .navbar-brand span {
       color: #C6A668; }
     .navbar-brand img {
-      height: 60px;
+      height: 100%;
       margin-left: 15px;
       width: auto;
       transition: all 300ms ease-in-out; }
@@ -4090,14 +4111,10 @@ font-family: Arial, Helvetica, sans-serif}
     margin-top: 0; }
     @media (min-width: 480px) and (max-width: 1199px) {
       .navbar-nav {
-        margin-bottom: 0; }
-        .navbar-brand img {
-          height: 40px; } }
+        margin-bottom: 0; } }
     @media (max-width: 479px) {
       .navbar-nav {
-        margin-bottom: 0; }
-        .navbar-brand img {
-          height: 40px; }}
+        margin-bottom: 0; } }
     .navbar-nav .dropdown-menu > li {
       width: 100%; }
     .navbar-nav .dropdown-menu > li > a {
@@ -4129,7 +4146,7 @@ font-family: Arial, Helvetica, sans-serif}
       color: #fff;
       position: relative;
       transition: all 300ms ease-in-out;
-      font-weight: 700;
+      font-weight: 400;
       font-size: 12px;
       text-transform: uppercase; }
       @media (min-width: 480px) and (max-width: 1199px) {
@@ -4809,7 +4826,7 @@ font-family: Arial, Helvetica, sans-serif}
         margin-left: 5%;
         margin-right: 5%; } }
   .product-modal-title {
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     letter-spacing: 0.07em;
     text-transform: uppercase;
