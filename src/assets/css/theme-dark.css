@@ -4023,7 +4023,7 @@ font-family: 'Roboto', sans-serif; }
       min-height: 100vh; }
     .home.image-slider .swiper-slide {
       min-height: 100vh;
-      padding: 33vh 15px 0;
+      padding: 33vh 10px 0;
       box-sizing: border-box;
       background-size: cover !important;
       background-position: center !important; }
