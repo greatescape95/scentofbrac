@@ -21,14 +21,6 @@ namespace ScentofBracApi.Controllers
             this.SendSimpleMessage(contactForm);
         }
 
-        [Route(nameof(Hello))]
-        [HttpGet]
-        public string Hello()
-        {
-            Console.WriteLine("text");
-            return "test";
-        }
-
         private IRestResponse SendSimpleMessage(ContactFormData form = null)
         {
             Console.WriteLine("text2");

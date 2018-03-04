@@ -42,23 +42,13 @@ export class ProductsComponent implements OnInit {
                 name: 'Olive Oil Orange Soap',
                 imageUrl: 'assets/img/soap2.jpg',
                 secImageUrl: 'assets/img/product4.png'
-            },
-            // {
-            //     name: 'Olive Oil Sage Soap',
-            //     imageUrl: 'assets/img/product3.png',
-            //     secImageUrl: 'assets/img/product4.png'
-            // },
-            // {
-            //     name: 'Olive Oil Hand Cream',
-            //     imageUrl: 'assets/img/product3.png',
-            //     secImageUrl: 'assets/img/product4.png'
-            // },
+            }
         ];
     }
 
     initSwiper = () => {
         // product list
-        let swiper = new Swiper('.product-list-slider', {
+        const swiper = new Swiper('.product-list-slider', {
             slidesPerView: 3,
             pagination: '.product-list-pagination',
             paginationClickable: true,
